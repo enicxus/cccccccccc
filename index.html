@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title> El salon selecto</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<h2>Elija una de nuestras opciones</h2>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Crear cuenta</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>o usa tu correo para registrarte</span>
-			<input type="text" placeholder="Nombre" />
-			<input type="email" placeholder="correo" />
-			<input type="password" placeholder="Contraseña" />
-			<button>Registrarse</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>iniciar sesion</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>ingresa tu usuario</span>
-			<input type="email" placeholder="Correo" />
-			<input type="password" placeholder="Contraseña" />
-			<a href="#">olvidaste tu contraseña??</a>
-			<button>continuar</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>¡Comienza ya!</h1>
-				<p>registra tu informacion para acceder a nuestros servicio de comida gourmet</p>
-				<button class="ghost" id="signIn">Iniciar sesion</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>¡Hola!</h1>
-				<p> Siempre estaremos aqui para satisfacer tu apetito</p>
-				<button class="ghost" id="signUp">Registrarse</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-  <script  src="./script.js"></script>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>El salón selecto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Elija una de nuestras opciones</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Crear cuenta</h1>
+          <div class="social-container">
+            <a href="#" class="social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social"
+              ><i class="fab fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="social"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span>o usa tu correo para registrarte</span>
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Correo" id="email" />
+          <input type="password" placeholder="Contraseña" id="password" />
+          <button>Registrarse</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Iniciar sesión</h1>
+          <div class="social-container">
+            <a href="#" class="social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social"
+              ><i class="fab fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="social"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span>Ingresa tu usuario</span>
+          <input type="email" placeholder="Correo" id="email" />
+          <input type="password" placeholder="Contraseña" id="password" />
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button id="continuarButton">Continuar</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>¡Comienza ya!</h1>
+            <p>Registra tu información para acceder a nuestros servicios de comida gourmet.</p>
+            <button class="ghost" id="signIn">Iniciar sesión</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>¡Hola!</h1>
+            <p>Siempre estaremos aquí para satisfacer tu apetito.</p>
+            <button class="ghost" id="signUp">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
