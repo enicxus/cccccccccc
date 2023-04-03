@@ -16,7 +16,7 @@ img {
 
 :root {
   --body-font: "Inter", sans-serif;
-  --theme-bg: #e1dfef;
+  --theme-bg: #FFF;
   --body-color: #ffffff;
   --button-bg: #353340;
   --border-color: rgb(128 129 145 / 24%);
@@ -292,6 +292,7 @@ body:before {
 .anim {
   -webkit-animation: bottom 0.8s var(--delay) both;
   animation: bottom 0.8s var(--delay) both;
+  background-color: #FFF;
 }
 
 .main-header {
@@ -305,6 +306,7 @@ body:before {
   z-index: 11;
 }
 
+
 .small-header {
   font-size: 24px;
   font-weight: 500;
@@ -317,23 +319,14 @@ body:before {
   align-items: center;
 }
 
-.main-blog__author {
-  display: flex;
-  align-items: center;
-  padding-bottom: 10px;
-}
 
-.main-blog__author.tips {
-  flex-direction: column-reverse;
-  align-items: flex-start;
-}
 
 .main-blog__title {
   font-size: 25px;
   max-width: 12ch;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -363,20 +356,6 @@ body:before {
   background-position-x: 0;
   background-size: 139%;
   filter: saturate(1.4);
-}
-
-.main-blog+.main-blog .author-img {
-  border-color: rgba(0, 0, 0, 0.75);
-  margin-top: 14px;
-}
-
-.main-blog+.main-blog .author-img__wrapper svg {
-  border-color: #ffe6b2;
-  color: #e7bb7d;
-}
-
-.main-blog+.main-blog .author-detail {
-  margin-left: 0;
 }
 
 @media screen and (max-width: 905px) {
