@@ -78,3 +78,32 @@ input {
 	width: 100%;
     
 }
+
+
+@media only screen and (min-width: 603px) {
+    .container {
+        width: 603px;
+        max-width: 100%;
+        min-height: 652px;
+        margin: 0 auto;
+    }
+    
+    .form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .input-container {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    span {
+        margin-top: 0;
+    }
+    
+    button {
+        margin-top: 30px;
+    }
+}
