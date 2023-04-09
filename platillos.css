@@ -24,6 +24,7 @@ img {
     --delay: 0s;
 }
 
+
 body {
     font-family: var(--body-font);
     color: var(--body-color);
@@ -54,7 +55,7 @@ body:before {
     max-height: 900px;
     height: 95vh;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     width: 100%;
     border-radius: 20px;
     font-size: 15px;
@@ -223,6 +224,7 @@ body:before {
 .wrapper {
     flex-direction: column;
     flex-grow: 1;
+    margin-right: 30px;
 }
 
 .header {
@@ -280,54 +282,7 @@ body:before {
     }
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 30px 30px;
-    flex-grow: 1;
-    overflow: auto;
-}
 
-.anim {
-    -webkit-animation: bottom 0.8s var(--delay) both;
-    animation: bottom 0.8s var(--delay) both;
-    background-color: #FFF;
-}
-
-.main-header {
-    font-size: 30px;
-    color: #000000;
-    font-weight: 700;
-    padding-bottom: 20px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 11;
-}
-
-
-.small-header {
-    font-size: 24px;
-    font-weight: 500;
-    color: #000000;
-    margin: 30px 0 20px;
-}
-
-.main-blogs {
-    display: flex;
-    align-items: center;
-}
-
-
-
-.main-blog__title {
-    font-size: 25px;
-    max-width: 12ch;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
 
 
 
@@ -345,6 +300,7 @@ body:before {
         background-blend-mode: overlay;
     }
 }
+
 
 
 
@@ -411,6 +367,7 @@ video {
     cursor: pointer;
     transition: 0.4s;
 }
+
 
 
 
