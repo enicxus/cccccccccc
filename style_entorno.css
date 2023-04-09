@@ -14,6 +14,8 @@ img {
   max-width: 100%;
 }
 
+
+
 :root {
   --body-font: "Inter", sans-serif;
   --theme-bg: #FFF;
@@ -382,6 +384,14 @@ body:before {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
+
+.agregar_al_carrito{
+  background-color: #c2c8eb;
+  border-radius: 10px;
+  width: 120px;
+  margin-left: 50px;
+}
+
 
 @media screen and (max-width: 980px) {
   .videos {
