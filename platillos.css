@@ -329,33 +329,7 @@ body:before {
     margin-bottom: 30px;
 }
 
-.main-blog {
-    background-image: url("imagen_principal.jpg");
-    background-size: 80%;
-    background-position-x: 235px;
-    background-position-y: -100px;
-    background-color: #31abbd;
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    padding: 30px;
-    border-radius: 20px;
-    align-self: stretch;
-    overflow: hidden;
-    position: relative;
-    transition: background 0.3s;
-    background-repeat: no-repeat;
-}
 
-.main-blog+.main-blog {
-    margin-left: 20px;
-    width: 35%;
-    background-image: url(segunda_imagen.jpg);
-    background-color: unset;
-    background-position-x: 0;
-    background-size: 139%;
-    filter: saturate(1.4);
-}
 
 @media screen and (max-width: 905px) {
 
@@ -380,6 +354,13 @@ body:before {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+}
+
+.agregar_al_carrito{
+    background-color: #c2c8eb;
+    border-radius: 10px;
+    width: 120px;
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 980px) {
