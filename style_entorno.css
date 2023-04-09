@@ -689,4 +689,25 @@ form .button input:hover{
   color: #000000;
 }
 
+.button{
+  height: 45px;
+  width: 45px 0;
+}
+
+.button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background: #0f2027;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.button input:hover{
+  background:  #6c5ecf;
+}
 /* termina carrito de compras fin */
