@@ -12,20 +12,3 @@ signInButton.addEventListener('click', () => {
 
 
 
-
-
-// Obtener los elementos HTML del correo y contraseña
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
-
-// Obtener el botón de "continuar"
-const continueBtn = document.querySelector(".sign-in-container button");
-
-// Agregar un evento de click al botón
-continueBtn.addEventListener("click", function() {
-  // Verificar si los campos de correo y contraseña no están vacíos
-  if (emailInput.value !== "" && passwordInput.value !== "") {
-    // Si ambos campos están llenos, redirigir a "entorno.html"
-    window.location.href = "entorno.html";
-  }
-});

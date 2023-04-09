@@ -615,6 +615,8 @@ form .button input:hover{
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  flex-direction: row;
+  
 }
 
 .cart-item img {
@@ -710,4 +712,14 @@ form .button input:hover{
 .button input:hover{
   background:  #6c5ecf;
 }
+
+
+@media (max-width : 888px) {
+  .cart-item{
+    display: grid;
+  }
+}
+
+
+
 /* termina carrito de compras fin */
