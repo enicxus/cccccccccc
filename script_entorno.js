@@ -53,3 +53,17 @@ $(function () {
         $(".video-detail .author-img").attr("src", img);
     });
 });
+
+document.addEventListener("click", function(event) {
+    var userMenu = document.querySelector(".user-menu");
+    var dropdownMenu = document.querySelector(".dropdown-menu");
+    var arrowDown = document.querySelector(".arrow-down");
+  
+    if (!userMenu.contains(event.target)) {
+      dropdownMenu.classList.remove("show");
+      arrowDown.classList.remove("rotate");
+    } else {
+      dropdownMenu.classList.toggle("show");
+      arrowDown.classList.toggle("rotate");
+    }
+  });
