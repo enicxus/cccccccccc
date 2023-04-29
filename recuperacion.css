@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+	font-family: "Poppins",
+		sans-serif;
 }
+
+
 
 body {
 	background: #f6f5f7;
@@ -17,8 +23,8 @@ body {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #2bb8ff;
-	background-color:#2bb8ff;;
+	border: 1px solid #4070f4;
+	background-color:#4070f4;
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: bold;
