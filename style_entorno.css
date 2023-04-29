@@ -821,6 +821,23 @@ form .button input:hover{
   color: #FFFFFF;
 }
 
+.header {
+  padding: 20px;
+}
+
+.header {
+display: flex;
+align-items: center;
+flex-shrink: 0;
+padding: 30px;
+}
+
+.wrapper {
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 30px;
+}
+
 .show {
   display: block;
 }
