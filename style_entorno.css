@@ -842,6 +842,8 @@ padding: 30px;
   display: block;
 }
 
+/*inicio agragar platillo*/ 
+
 .input-box input[type="file"] {
   border: none;
   padding: 10px;
@@ -877,4 +879,62 @@ padding: 30px;
 
 .button input[type="submit"]:hover {
   background-color: #222222
+}
+
+/* termino agregar platillo */
+
+.product-list {
+  border: 2px solid #ccc;
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.remove-product {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.remove-product:hover {
+  background-color: #c82333;
 }
