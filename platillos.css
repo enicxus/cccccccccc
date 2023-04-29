@@ -436,16 +436,16 @@ video {
     border-radius: 10px;
 }
 
-.header{
+.header {
     justify-content: right;
-  }
-  
-  .user-menu {
+}
+
+.user-menu {
     position: relative;
     display: inline-block;
-  }
-  
-  .user-info {
+}
+
+.user-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,28 +456,28 @@ video {
     width: 40px;
     cursor: pointer;
     margin-right: 10px;
-  }
-  
-  .user-info img {
+}
+
+.user-info img {
     height: 100%;
     border-radius: 50%;
-  }
-  
-  .user-name {
+}
+
+.user-name {
     margin: 0;
     font-weight: bold;
-  }
-  
-  .arrow-down {
+}
+
+.arrow-down {
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid #000000;
     cursor: pointer;
-  }
-  
-  .dropdown-menu {
+}
+
+.dropdown-menu {
     position: absolute;
     top: 50px;
     right: 0;
@@ -487,52 +487,52 @@ video {
     border: 1px solid #000000;
     border-radius: 5px;
     z-index: 9999;
-  }
-  
-  .dropdown-menu ul {
+}
+
+.dropdown-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .dropdown-menu li {
+}
+
+.dropdown-menu li {
     padding: 10px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #000000;
-  }
-  
-  .dropdown-menu li:last-child {
+}
+
+.dropdown-menu li:last-child {
     border-bottom: none;
-  }
-  
-  .dropdown-menu li:hover {
+}
+
+.dropdown-menu li:hover {
     background-color: #000000;
     color: #FFFFFF;
-  }
-  
-  .dropdown-menu li a {
+}
+
+.dropdown-menu li a {
     text-decoration: none;
     color: #000000;
     display: block;
-  }
-  
-  .dropdown-menu li a:hover {
+}
+
+.dropdown-menu li a:hover {
     color: #FFFFFF;
-  }
-  
-  .dropdown-menu li:last-child {
+}
+
+.dropdown-menu li:last-child {
     border-bottom: none;
-  }
-  
-  .dropdown-menu li:last-child a {
+}
+
+.dropdown-menu li:last-child a {
     color: red;
-  }
-  
-  .dropdown-menu li:hover {
+}
+
+.dropdown-menu li:hover {
     background-color: #000000;
     color: #FFFFFF;
-  }
-  
-  .show {
+}
+
+.show {
     display: block;
-  }
+}
