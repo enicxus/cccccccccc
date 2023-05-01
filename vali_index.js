@@ -26,19 +26,23 @@ $(document).ready(function () {
         }
     });
 
+
     // Función para validar el correo electrónico
     function isValidEmail(email) {
-        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}\.[^\s@]{1,}$/;
         var emailParts = email.split('@');
         var localPart = emailParts[0];
         var domainPart = emailParts[1];
+        var domainParts = domainPart.split('.');
+        var topLevelDomain = domainParts[domainParts.length - 1];
         return emailRegex.test(email) &&
-            localPart.length > 0 && localPart.length < 65 &&
-            !/^\./.test(localPart) && !/\.$/.test(localPart) && !/\.\./.test(localPart) && !/[^a-zA-Z0-9._%+-]/.test(localPart) &&
-            domainPart.length > 2 && domainPart.length < 256 &&
-            !/^\./.test(domainPart) && !/\.$/.test(domainPart) && !/\.\./.test(domainPart) && !/[^a-zA-Z0-9-]/.test(domainPart) &&
-            /[a-zA-Z]/.test(domainPart.charAt(domainPart.length - 1));
+            localPart.length <= 64 &&
+            domainPart.length >= 4 && domainPart.length <= 255 &&
+            email.length <= 256 &&
+            !/ñ/.test(email) && !/Ñ/.test(email) && !/ñ/.test(domainPart) && !/Ñ/.test(domainPart) &&
+            /^[a-zA-Z0-9._%+-]+$/.test(localPart) && /^[a-zA-Z0-9-]+$/.test(domainParts[0]) &&
+            /^[a-zA-Z]+$/.test(topLevelDomain);
     }
-
 });
+
 
