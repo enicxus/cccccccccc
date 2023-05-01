@@ -1,45 +1,40 @@
-$(document).ready(function() {
-    // Validación del formulario de inicio de sesión
-    $("#login-form").submit(function(e) {
-        e.preventDefault();
-    
-        var email = $("#email-login").val();
-        var password = $("#password-login").val();
-    
-        if (email == "" || password == "") {
-        alert("Por favor ingrese su correo y contraseña.");
-        return;
+$(document).ready(function () {
+    // Bloquear el uso de la tecla espacio en todos los inputs
+    $('input').on('keydown', function (e) {
+        if (e.keyCode === 32) {
+            return false;
         }
-        // Validar correo electrónico
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    if (!emailRegex.test(email)) {
-        alert("Ingrese un correo electrónico válido.");
-        return;
-    }
-    
-    // Enviar formulario si la validación es exitosa
-    $(this).unbind("submit").submit();
     });
-    // Validación del formulario de registro
-    $("#register-form").submit(function(e) {
-    e.preventDefault();
-    
-    var email = $("#email-register").val();
-    
-    // Validar correo electrónico
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    if (!emailRegex.test(email)) {
-        alert("Ingrese un correo electrónico válido.");
-        return;
-    }
-    
-    // Enviar formulario si la validación es exitosa
-    $(this).unbind("submit").submit();
-});
-// Bloquear la tecla de espacio para el campo de entrada de correo electrónico
-$("#email-login, #email-register").keydown(function(e) {
-    if (e.keyCode == 32) {
-        e.preventDefault();
-    }
+
+    // Validar el correo electrónico en el campo de inicio de sesión
+    $('#login-email').on('input', function () {
+        var email = $(this).val();
+        if (!isValidEmail(email)) {
+            $(this).addClass('invalid');
+        } else {
+            $(this).removeClass('invalid');
+        }
     });
+
+    // Validar el correo electrónico en el campo de registro
+    $('#signup-email').on('input', function () {
+        var email = $(this).val();
+        if (!isValidEmail(email)) {
+            $(this).addClass('invalid');
+        } else {
+            $(this).removeClass('invalid');
+        }
+    });
+
+    // Función para validar el correo electrónico
+    function isValidEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        var emailParts = email.split('@');
+        var localPart = emailParts[0];
+        var domainPart = emailParts[1];
+        return emailRegex.test(email) &&
+            localPart.length <= 64 &&
+            domainPart.length >= 4 && domainPart.length <= 255 &&
+            email.length <= 256;
+    }
 });
