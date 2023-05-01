@@ -26,6 +26,8 @@ $(document).ready(function () {
         }
     });
 
+
+
     // Función para validar el correo electrónico
     function isValidEmail(email) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
