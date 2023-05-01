@@ -28,14 +28,17 @@ $(document).ready(function () {
 
     // Función para validar el correo electrónico
     function isValidEmail(email) {
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/; // formato estándar de correo electrónico
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         var emailParts = email.split('@');
         var localPart = emailParts[0];
         var domainPart = emailParts[1];
         return emailRegex.test(email) &&
-            localPart.length <= 64 &&
-            domainPart.length >= 2 && domainPart.length <= 255 &&
-            email.length <= 256 &&
-            !/ñ/.test(email) && !/Ñ/.test(email) && !/ñ/.test(domainPart) && !/Ñ/.test(domainPart);
+            localPart.length > 0 && localPart.length < 65 &&
+            !/^\./.test(localPart) && !/\.$/.test(localPart) && !/\.\./.test(localPart) && !/[^a-zA-Z0-9._%+-]/.test(localPart) &&
+            domainPart.length > 2 && domainPart.length < 256 &&
+            !/^\./.test(domainPart) && !/\.$/.test(domainPart) && !/\.\./.test(domainPart) && !/[^a-zA-Z0-9-]/.test(domainPart) &&
+            /[a-zA-Z]/.test(domainPart.charAt(domainPart.length - 1));
     }
+
 });
+
