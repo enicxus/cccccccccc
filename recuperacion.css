@@ -75,6 +75,13 @@ span {
 	height: 100%;
 }
 
+textarea {
+	background-color: #eee;
+	border: none;
+	padding: 20px 15px;
+	margin: 8px 0;
+	width: 100%;;
+}
 
 input {
 	background-color: #eee;

@@ -15,8 +15,7 @@
             <form action="#">
                 <div class="input-container">
                     <span>Validar Correo.</span>
-                    <input type="text" placeholder="XXXX-XXXX" id="codigo_correo_nuevo_usuario" required />
-
+                    <input type="text" placeholder="XXXX-XXXX"  minlength="9" maxlength="9" pattern="\d{4}-\d{4}" id="codigo_correo_nuevo_usuario"  required title="Debe ingresar un número de 8 dígitos separados por un guión (-). Ejemplo: 1234-5678"> 
                 </div>
                 <button type="submit" formaction="pas_nuevo_usuario.html">Confirmar</button>
             </form>

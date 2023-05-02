@@ -6,6 +6,14 @@
     <title>El Salón Selecto</title>
     <link rel="stylesheet" href="./recuperacion.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+        function validarInput(event) {
+            const teclaPresionada = event.key;
+            if (teclaPresionada === " ") {
+                event.preventDefault();
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -14,8 +22,8 @@
             <form action="#">
                 <div class="input-container">
                     <span>Cambiar contraseña.</span>
-                    <input type="password" placeholder="Nueva contraseña" id="nueva-contraseña" required />
-                    <input type="password" placeholder="Confirmar contraseña" id="confirmar-contraseña"  required/>
+                    <input type="password" placeholder="Nueva contraseña" id="nueva-contraseña" minlength="10" maxlength="14" onkeydown="validarInput(event)" required />
+                    <input type="password" placeholder="Confirmar contraseña" id="confirmar-contraseña" minlength="10" maxlength="14" onkeydown="validarInput(event)" required/>
                 </div>
                 <button type="submit" formaction="index.html">Aceptar</button>
             </form>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,15 +13,24 @@
         <div class="form-container sign-up-container">
             <form action="#">
                 <div class="input-container">
-                    <span>Recuperar contaseña.</span>
-                    <input type="email" placeholder="Correo" id="email" required />
+                    <span>Recuperar contraseña.</span>
+                    <input type="email" placeholder="Correo" id="email" onkeydown="validarInput(event)" required />
                 </div>
                 <button type="submit" formaction="recuperacion2.html">Enviar </button>
-                
-                <br> Se enviara un codigo a su correo para verificar de que es usted!
+                <br />
+                Se enviará un código a su correo para verificar que es usted.
             </form>
         </div>
     </div>
+    <script>
+        function validarInput(event) {
+            const teclaPresionada = event.key;
+            if (teclaPresionada === " " || teclaPresionada === "ñ" || teclaPresionada === "Ñ") {
+                event.preventDefault();
+            }
+        }
+    </script>
 </body>
 
 </html>
+

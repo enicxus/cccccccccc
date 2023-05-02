@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="vali_index.js"></script>
-
   </head>
   <body>
     <section class="wrapper">
@@ -16,7 +15,7 @@
         <header>Iniciar sesión</header>
         <form action="#">
           <input type="email" placeholder="Correo" required />
-          <input type="password" placeholder="Contraseña" required />
+          <input type="password" placeholder="Contraseña" minlength="10" maxlength="14" required  />
           <a href="recuperacion.html">¿Olvidaste tu contraseña?</a>
           <button type="submit" formaction="entorno.html">Ingresar</button>
         </form>
